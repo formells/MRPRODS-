@@ -45,7 +45,7 @@ for i = 1:length(x4_coeff_values)
     prob = optimproblem('Objective', obj, 'ObjectiveSense', 'min');
     
     % Add constraints (assuming they remain the same)
-    prob.Constraints.c1 = 20*x1 >= 40; 
+    prob.Constraints.c1 = 0.5*x1 >= 40; 
     prob.Constraints.c2 = x2 >= 40; 
     prob.Constraints.c3 = 20*x3 >= 40; 
     prob.Constraints.c4 = x4 >= 1; 
