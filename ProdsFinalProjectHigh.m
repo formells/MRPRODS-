@@ -37,7 +37,7 @@ obj = 45000*x1 + 45000*x2 + 162600*x3 + 900000*x4 + 150000*x5 + 210000*x6 + 1080
 prob = optimproblem('Objective', obj, 'ObjectiveSense', 'min');
 
 % Constraint
-prob.Constraints.c1 = 20*x1 >= 40; 
+prob.Constraints.c1 = 0.5*x1 >= 40; 
 prob.Constraints.c2 = x2 >= 40; 
 prob.Constraints.c3 = 20*x3 >= 40; 
 prob.Constraints.c4 = x4 >= 1; 
